@@ -61,8 +61,35 @@ body {
 }
 .aside-item {
     display : flex;
-    gap : 1rem;
+    gap : 1.5rem;
+    margin-top : 0.5rem;
     padding : 0.5rem;
+    margin-left : 1.5rem;
+    font-size : 1.2rem;
+    width : 80%;
+}
+.aside-item a:link,
+.aside-item a:visited {
+    text-decoration : none;
+    color : #124170;
+}
+.aside-item:hover {
+    border : 1px solid #124170;
+    border-radius : 0.5rem;
+    background-color : #124170;
+    color : #AAFFC7;
+}
+.aside-item:hover a {
+    color: #AAFFC7;
+}
+.item-selected {
+    border : 1px solid #124170;
+    border-radius : 0.5rem;
+    background-color : #124170;
+    color : #AAFFC7;
+}
+.aside-item.item-selected a {
+    color : #AAFFC7;
 }
 .aside-account-text {
     text-align : center;
