@@ -159,8 +159,11 @@ body {
 }
 .card-content p:nth-child(2) {
     font-weight : bold;
+    font-size : 1.5rem;
 }
-
+.secondary-card-header p:nth-child(1) {
+    font-size : 1.5rem;
+}
 .profile {
     position :relative;
 }
@@ -328,7 +331,24 @@ body {
     gap : 1rem;
     justify-content: space-between;
 }
-
+.total-sales {
+    color : rgb(66 12 2 / 59%);
+}
+.total-purchase-card {
+    color : rgb(4, 87, 4);
+}
+.total-expense {
+    color : rgb(40, 40, 188);
+     
+}
+.invoice-due {
+    color : rgb(100, 100, 20);
+}
+.secondary-card-icon {
+    width : 2rem;
+    height : 2rem;
+    fill : #124170;
+}
 footer {
     display : grid;
     grid-template-columns : 1fr 1fr;
@@ -369,6 +389,7 @@ footer {
     .card {
         width : 20%;
         height : 6rem;
+        line-height : 1.6;
     }
     .secondary-cards {
         flex-direction : row;
@@ -390,5 +411,8 @@ footer {
     }
     #menu-button {
         visibility: hidden;
+    }
+    .card-content {
+        height : 100%;
     }
 }
