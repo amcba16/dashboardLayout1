@@ -216,7 +216,27 @@ body {
 #notification {
     position : relative;
 }
-
+.top-slling-item-left {
+    display : flex;
+    gap : 1rem;
+}
+.item-text p:first-child {
+    font-weight:500;
+}
+.item-text p:nth-child(2) span:first-child {
+    font-weight : bold;
+}
+.item-percentage {
+    width : 3rem;
+    height : 2rem;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    border-radius : 0.5rem;
+    border : 1px solid #215B63;
+    background-color : #124170;
+    color : white;
+}
 #notification-dropdown {
     position : absolute;
     background-color : #67C090;
