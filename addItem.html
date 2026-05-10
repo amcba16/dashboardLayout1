@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-item.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <aside id="aside">
+        <header class="aside-header">
+            <img src="img/profile.jpg" alt="logo"/>
+        </header>
+        <section class="aside-content">
+            <div class="aside-item ">
+                <ion-icon name="home"></ion-icon>
+                <a href="index.html">Dashboard
+                </a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="cube"></ion-icon>
+                <a href="invontory.html">Inventory</a>
+            </div>
+            <div class="aside-item item-selected">
+                <ion-icon name="add"></ion-icon>
+                <a href="addItems.html">Add Items</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="document"></ion-icon>
+                <a href="report.html">Report</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="alert-circle"></ion-icon>
+                <a href="404.html">404 Error</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="copy"></ion-icon>
+                <a href="docs.html">Docs</a>
+            </div>
+            <p class="aside-account-text">Account</p>
+            <div class="aside-item">
+                <ion-icon name="log-in"></ion-icon>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="person-add"></ion-icon>
+                <a href="signUp.html">Sign Up</a>
+            </div>
+        </section>
+    </aside>
+    <main>
+        <header class="main-header">
+            <ion-icon name="menu-outline" id="menu-button"></ion-icon>
+            <section class="profile-section">
+                <section class="notification" id="notification">
+                    <ion-icon name="notifications-outline" id="notification-icon"></ion-icon>
+                    <section class="notification-dropdown" id="notification-dropdown">
+                        <section class="notification-content">
+                            <img src="img/profile.jpg" alt="notification-icon"/>
+                            <section class="notification-text">
+                                <p>New order recived</p>
+                                <p>order #12345 has been placed</p>
+                                <p>5 minutes ago</p>
+                            </section>
+                        </section>
+                        <section class="notification-content">
+                            <img src="img/profile.jpg" alt="notification-icon"/>
+                            <section class="notification-text">
+                                <p>New order recived</p>
+                                <p>order #12345 has been placed</p>
+                                <p>5 minutes ago</p>
+                            </section>
+                        </section>
+                        <section class="notification-content">
+                            <img src="img/profile.jpg" alt="notification-icon"/>
+                            <section class="notification-text">
+                                <p>New order recived</p>
+                                <p>order #12345 has been placed</p>
+                                <p>5 minutes ago</p>
+                            </section>
+                        </section>
+                        <section class="view-all-notification">
+                            <a href="#">View all notification</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="profile" id="profile">
+                    <img src="img/profile.jpg" alt="profile picture"/>
+                    <section class="dropdown" id="profile-dropdown">
+                        <header class="profile-header">
+                            <img src="img/profile.jpg" alt="profile picture"/>
+                            <p>Cyber Dragon</p>
+                        </header>
+                        <hr class="profile-divider"/>
+                        <div class="content">
+                            <p>Home</p>
+                            <p>Inbox</p>
+                            <p>Chat</p>
+                            <p>Acitivity</p>
+                            <p>Activity setting</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </header>
+        <section class="heading-section">
+            <div class="add-items-container">
+                <h1>Add Inventory</h1>
+                <p>Manage your inventory items</p>
+            </div>
+            <button class="go-to-inventory-list-button">Go to inventory list</button>
+        </section>
+        <section class="form-container">
+            <section class="add-item-form">
+                <form action="">
+                    <div class="two-column">
+                        <div class="form-item w-100">
+                            <label for="product-name">Product Name</label>
+                            <input type="text" autocomplete="off" id="product-name" placeholder="Enter the product name">
+                        </div>
+                        <div class="form-item w-100">
+                            <label for="sku">SKU</label>
+                            <input type="text" autocomplete="off" id="sku" placeholder="Enter SKU">
+                        </div>
+                    </div>
+                    <div class="two-column">
+                        <div class="form-item w-100">
+                            <label for="sku">Price</label>
+                            <input type="number" autocomplete="off" id="sku" placeholder="0.00">
+                        </div>
+                        <div class="form-item w-100">
+                            <label for="stock">Stock Quantity</label>
+                            <input type="number" autocomplete="off" id="stock" placeholder="0" step="1" min="0">
+                        </div>
+                    </div>
+                    <div class="form-item category">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="food">Food</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="product-image">Product Image</label>
+                        <input type="file" id="product-image" class="product-image">
+                    </div>
+                    <div class="form-item">
+                        <label for="description">Description</label>
+                        <textarea autocomplete="off" id="description" placeholder="Enter Product Description"></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <input type="submit" value="Add Product"/>
+                        <input type="reset" value="clear"/>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span>FAQ</span>
+        <span>Help Center</span>
+        <span>Terms</span>
+        <span>Privacy</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

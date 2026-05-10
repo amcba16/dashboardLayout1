@@ -59,6 +59,10 @@
     border-radius : 0.5rem;
     margin-top :2rem;
     margin-bottom : 2rem;
+    overflow-x : auto;
+}
+main {
+    overflow-x: auto;
 }
 .table table {
     width : 100%;
@@ -81,6 +85,36 @@ table, tr,td {
 tr {
     border-bottom : 1px solid black;
 }
+
+.pagination {
+    display:flex;
+    justify-content : right;
+}
+.pagination-container {
+    border : 1px solid black;
+    border-radius : 0.5rem;
+    width : 50%;
+    display : flex;
+    /* justify-content: space-between; */
+}
+.pagination-container span {
+    border-right : 1px solid black;
+    align-items: center;
+    padding : 1rem;
+    display:flex;
+    justify-content: center;
+    
+}
+.pagination-container span:last-child {
+    border-right : none;
+}
+.pagination-container button {
+    width : 4rem;
+    height : 2rem;
+    border-radius : 0.5rem;
+    background-color : #215B63;
+    color : white;
+}
 .product-image img {
     width : 3rem;
     height : 3rem;
@@ -90,10 +124,35 @@ tr {
     gap : 1rem;
     align-items : center;
 }
+tr:hover {
+    background-color : rgba(128, 128, 128, 0.523);
+}
+tfoot tr:hover {
+    background-color : unset;
+}
+thead tr:hover {
+    background-color : #124170;
+}
+.pagination-container span:first-child {
+    background-color : rgba(128, 128, 128, 0.638);
+}
 @media (min-width : 768px) {
     .table-features {
         flex-direction : row;
         justify-content : space-between;
         align-items : center;
+    }
+    .pagination-container {
+        border : 1px solid black;
+        border-radius : 0.5rem;
+        width : 35%;
+        display : flex;
+        /* justify-content: space-between; */
+    }
+    main {
+        overflow-x:unset;
+    }
+    .table {
+        overflow-x:unset;
     }
 }
