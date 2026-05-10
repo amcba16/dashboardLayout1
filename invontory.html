@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inventory.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <aside id="aside">
+        <header class="aside-header">
+            <img src="img/profile.jpg" alt="logo"/>
+        </header>
+        <section class="aside-content">
+            <div class="aside-item">
+                <ion-icon name="home"></ion-icon>
+                <a href="index.html">Dashboard
+                </a>
+            </div>
+            <div class="aside-item item-selected">
+                <ion-icon name="cube"></ion-icon>
+                <a href="invontory.html">Inventory</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="add"></ion-icon>
+                <a href="addItems.html">Add Items</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="document"></ion-icon>
+                <a href="report.html">Report</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="alert-circle"></ion-icon>
+                <a href="404.html">404 Error</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="copy"></ion-icon>
+                <a href="docs.html">Docs</a>
+            </div>
+            <p class="aside-account-text">Account</p>
+            <div class="aside-item">
+                <ion-icon name="log-in"></ion-icon>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="aside-item">
+                <ion-icon name="person-add"></ion-icon>
+                <a href="signUp.html">Sign Up</a>
+            </div>
+        </section>
+    </aside>
+    <main>
+        <header class="main-header">
+            <ion-icon name="menu-outline" id="menu-button"></ion-icon>
+            <section class="profile-section">
+                <section class="notification" id="notification">
+                    <ion-icon name="notifications-outline" id="notification-icon"></ion-icon>
+                    <section class="notification-dropdown" id="notification-dropdown">
+                        <section class="notification-content">
+                            <img src="img/profile.jpg" alt="notification-icon"/>
+                            <section class="notification-text">
+                                <p>New order recived</p>
+                                <p>order #12345 has been placed</p>
+                                <p>5 minutes ago</p>
+                            </section>
+                        </section>
+                        <section class="notification-content">
+                            <img src="img/profile.jpg" alt="notification-icon"/>
+                            <section class="notification-text">
+                                <p>New order recived</p>
+                                <p>order #12345 has been placed</p>
+                                <p>5 minutes ago</p>
+                            </section>
+                        </section>
+                        <section class="notification-content">
+                            <img src="img/profile.jpg" alt="notification-icon"/>
+                            <section class="notification-text">
+                                <p>New order recived</p>
+                                <p>order #12345 has been placed</p>
+                                <p>5 minutes ago</p>
+                            </section>
+                        </section>
+                        <section class="view-all-notification">
+                            <a href="#">View all notification</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="profile" id="profile">
+                    <img src="img/profile.jpg" alt="profile picture"/>
+                    <section class="dropdown" id="profile-dropdown">
+                        <header class="profile-header">
+                            <img src="img/profile.jpg" alt="profile picture"/>
+                            <p>Cyber Dragon</p>
+                        </header>
+                        <hr class="profile-divider"/>
+                        <div class="content">
+                            <p>Home</p>
+                            <p>Inbox</p>
+                            <p>Chat</p>
+                            <p>Acitivity</p>
+                            <p>Activity setting</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </header>
+        <section class="heading-section">
+            <div class="invenory-heading">
+                <h1>Inventory</h1>
+                <p>Manage your product inventory</p>
+            </div>
+            <button class="add-product">Add Product</button>
+        </section>
+        <section class="table-section">
+            <header class="table-features">
+                <div class="search-bar">
+                    <input type="search" class="search-bar-input" autocomplete="off" placeholder="Search products..."/>
+                </div>
+                <div class="filter">
+                    <button><span><ion-icon name="filter-outline"></ion-icon></span><span>filter</span></button>
+                    <button><span><ion-icon name="document-outline"></ion-icon></span><span>Excel</span></button>
+                    <button><span><ion-icon name="document-outline"></ion-icon></span><span>PDF</span></button>
+                </div>
+            </header>
+            <section class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Code</th>
+                            <th>Category</th>
+                            <th>Brand</th>
+                            <th>price</th>
+                            <th>unit</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image">
+                                <img src="img/eairbuds.jpg" alt="product-image"/>
+                                <p>Gamming Joy Stick</p>
+                            </td>
+                            <td>
+                                <p>ABC023</p>
+                            </td>
+                            <td><p>Electronics</p></td>
+                            <td><p>Brand name</p></td>
+                            <td><p>$99</p></td>
+                            <td><p>pcs</p></td>
+                            <td><p>150</p></td>
+                            <td>
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span>FAQ</span>
+        <span>Help Center</span>
+        <span>Terms</span>
+        <span>Privacy</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
