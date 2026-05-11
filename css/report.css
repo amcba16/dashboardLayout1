@@ -36,7 +36,7 @@
     border: 1px solid black;
     padding : 1rem;
     border-radius : 0.5rem;
-    width : 16rem;
+    /* width : 100%; */
 }
 .report-card p:first-child {
     font-size : 1rem;
@@ -47,6 +47,33 @@
     font-weight : bold;
     font-size : 1.5rem;
 }
+.top-products {
+    padding : 0.8rem 1.5rem 0 1.5rem;
+    /* border: 1px solid black; */
+    margin-bottom : 2rem;
+}
+.product {
+    border : 1px solid black;
+    border-radius : 0.5rem;
+    padding : 1rem;
+}
+.product-item {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    margin-top : 1rem;
+}
+.unit-item {
+    margin-top : 0.5rem;
+    display : flex;
+    gap : 1rem;
+    align-items : center;
+}
+.product-item img {
+    width : 3rem;
+    height : 3rem;
+    border-radius : 0.5rem;
+}
 @media (min-width : 768px) {
     .heading-section {
         flex-direction : row;
@@ -55,5 +82,8 @@
     .report-cards {
         flex-direction : row;
         justify-content: space-between;
+    }
+    .report-card {
+        width : 100%;
     }
 }
