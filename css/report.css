@@ -74,6 +74,13 @@
     height : 3rem;
     border-radius : 0.5rem;
 }
+.product-text p:first-child {
+    font-weight : 500;
+    font-size : 1rem;
+}
+.product-item p:last-child {
+    font-weight : bold;
+}
 @media (min-width : 768px) {
     .heading-section {
         flex-direction : row;
