@@ -1,0 +1,54 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    box-sizing : border-box;
+}
+body {
+    background-color : #AAFFC7;
+    height : 100vh;
+}
+
+main {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 100%;
+}
+.four-zero-four {
+    line-height : 2;
+    text-align : center;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    gap : 1rem;
+    flex-direction : column;
+}
+.four-zero-four h1 {
+    font-size : 4.6rem;
+    text-align : center;
+    font-weight : bold;
+    color : #124170;
+}
+
+.four-zero-four p:nth-child(2) {
+    font-weight : 500;
+    font-size : 1.5rem;
+}
+.four-zero-four p:nth-child(3) {
+    font-weight : 400;
+    color : #215B63;
+}
+.dashbaord-button {
+    background-color : #124170;
+    width : 40%;
+    height : 20%;
+    border-radius : 0.5rem;
+    padding : 0.5rem;
+}
+.dashbaord-button a:link,
+.dashbaord-button a:visited {
+    color : #AAFFC7;
+    text-decoration : none;
+    font-weight : bold;
+}
