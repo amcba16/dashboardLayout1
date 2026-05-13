@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <main>
+        <section class="signup">
+            <header class="signup-heading">
+                <img src="img/profile.jpg" alt="logo"/>
+                <h1>Create your account</h1>
+            </header>
+            <section class="signup-form">
+                <form action="">
+                    <div class="full-name form-style">
+                        <input type="text" autocomplete="off" required id="full-name-input" placeholder=" "/>
+                        <label for="full-name-input">Enter Full Name</label>
+                    </div>
+                    <div class="email form-style">
+                        <input type="email" autocomplete="off" required id="email-input" placeholder=" "/>
+                        <label for="email-input">Enter Email address</label>
+                    </div>
+                    <div class="password form-style">
+                        <input type="password" autocomplete="off" required id="password-input" placeholder=" "/>
+                        <label for="password-input">Enter Password</label>
+                    </div>
+                    <div class="confirm-password form-style">
+                        <input type="password" autocomplete="off" required id="confirm-password" placeholder=" "/>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <div class="privacy">
+                        <input type="checkbox" required id="privacy-checkbox"/>
+                        <label for="privacy-checkbox">I agree to the terms and privacy</label>
+                    </div>
+                    <input type="submit" value="Sign up" id="signup"/>
+                </form>
+                <div class="sign-in">
+                    <p>Already have an account?</p>
+                    <a href="login.html">Sign In</a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
