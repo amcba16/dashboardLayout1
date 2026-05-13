@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family : sans-serif;
+    box-sizing : border-box;
+}
+
+body {
+    background-color : #AAFFC7;
+    height : 100vh;
+}
+
+main {
+    height : 100%;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.login {
+    border : 1px solid black;
+    padding : 1rem;
+    border-radius : 0.5rem;
+    width : 90%;
+}
+.login-header {
+    display : flex;
+    flex-direction : column;
+    gap : 1rem;
+    justify-content : center;
+    align-items : center;
+    margin-bottom : 2rem;
+}
+.login-header img {
+    width : 4rem;
+    height : 4rem;
+    border-radius : 5rem;
+}
+.login-header h1 {
+    font-size : 1.4rem;
+    font-weight : 400;
+}
+.email-input {
+    border : 1px solid black;
+    border-radius : 0.5rem;
+    height : 3rem;
+    margin-bottom : 1rem;
+    display : flex;
+    position : relative;
+}
+.email-input label {
+    position : absolute;
+    top : 50%;
+    left : 10px;
+    transform : translateY(-50%);
+    color : #124170;
+    transition : 0.3s;
+}
+.email-input input {
+    width : 100%;
+    border-radius : 0.5rem;
+    border : none;
+    outline : none;
+    background-color : #67C090;
+    color : #124170;
+    padding-left : 10px;
+}
+
+.email-input input:focus + label,
+.email-input input:not(:placeholder-shown) + label {
+    top : 10px;
+    left: 10px;
+    font-size : 0.5rem;
+    transition : 0.3s;
+}
+
+.email-input input:focus {
+    outline : none;
+    box-shadow : 0 0.5px 0 0.5rem #1241705e;
+}
+
+.forgot-password {
+    display : flex;
+    justify-content : space-between;
+    margin : 1rem;
+    font-size : 1rem;
+}
+
+.forgot-password a:link,
+.forgot-password a:visited {
+    text-decoration : none;
+    color : #124170;
+}
+
+#signin {
+    padding : 0.5rem;
+    height : 3rem;
+    font-size : 1rem;
+    background-color : #124170;
+    color : #AAFFC7;
+    font-weight : 600;
+    width : 100%;
+    border-radius : 0.5rem;
+}
+
+.sign-up {
+    display : flex;
+    gap : 1rem;
+    justify-content: center;
+    margin : 1rem;
+}
+.sign-up a:link,
+.sign-up a:visited {
+    text-decoration : none;
+    font-weight : 600;
+    color : #124170;
+}
+
+@media (min-width : 768px) {
+    .login {
+        width : 50%;
+    }
+}
